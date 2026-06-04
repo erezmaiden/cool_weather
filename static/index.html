@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cool Weather</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main>
+    <h1>Cool Weather</h1>
+    <p id="subtitle">Get current weather for your location</p>
+
+    <div id="controls">
+      <label for="city-name">City</label>
+      <select id="city-name">
+        <option value="" disabled selected>Choose a city</option>
+      </select>
+      <button id="locate">Use my location</button>
+      <label for="lat">Lat</label>
+      <input id="lat" placeholder="latitude" />
+      <label for="lon">Lon</label>
+      <input id="lon" placeholder="longitude" />
+      <button id="fetch">Fetch</button>
+    </div>
+    <div id="message" class="message">If location is unavailable, choose a city from the dropdown.</div>
+
+    <section id="result" hidden>
+      <h2 id="place"></h2>
+      <div class="grid">
+        <div><strong>Temperature</strong><div id="temp">—</div></div>
+        <div><strong>Wind</strong><div id="wind">—</div></div>
+        <div><strong>Weather</strong><div id="weather">—</div></div>
+        <div><strong>Time</strong><div id="time">—</div></div>
+      </div>
+    </section>
+
+    <section id="history-section">
+      <div class="history-header">
+        <h2>Recent searches</h2>
+        <button id="clear-history">Clear history</button>
+      </div>
+      <ul id="history-list" class="history-list"></ul>
+    </section>
+
+    <footer>
+      <small>Data from <a href="https://open-meteo.com/" target="_blank">Open-Meteo</a></small>
+    </footer>
+  </main>
+  <script src="/static/script.js"></script>
+</body>
+</html>

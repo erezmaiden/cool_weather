@@ -1,0 +1,17 @@
+*{box-sizing:border-box;font-family:Inter, system-ui, -apple-system, Roboto, "Helvetica Neue", Arial;margin:0}
+body{background:linear-gradient(180deg,#0f172a,#0b1220);color:#e6eef8;min-height:100vh;display:flex;align-items:center;justify-content:center}
+main{width:min(720px,92vw);padding:28px;background:rgba(255,255,255,0.03);border-radius:12px;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+h1{font-size:1.8rem;margin-bottom:4px}
+#controls{display:flex;gap:8px;align-items:center;margin:12px 0}
+#controls input{padding:6px 8px;border-radius:6px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);color:inherit}
+button{background:#06b6d4;color:#042b3d;padding:8px 10px;border-radius:8px;border:none;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+.grid div{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px}
+footer{margin-top:12px;color:#9fb3c9}
+.history-header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:18px}
+#history-list{list-style:none;padding:0;margin:10px 0 0}
+#history-list li{padding:10px 12px;border-radius:10px;background:rgba(255,255,255,0.04);margin-bottom:8px;cursor:pointer;transition:background 0.2s}
+#history-list li:hover{background:rgba(255,255,255,0.08)}
+#clear-history{background:#f97316;color:#fff;}
+.message{margin-top:10px;padding:10px 12px;border-radius:10px;background:rgba(255,255,255,0.06);color:#d7e7ff;font-size:0.95rem;}
+.message.error{background:rgba(248,113,113,0.15);color:#ffe2e2;border:1px solid rgba(248,113,113,0.35)}

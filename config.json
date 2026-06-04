@@ -1,0 +1,22 @@
+{
+  "weatherApiBase": "https://api.open-meteo.com/v1/forecast",
+  "weatherApiParams": "current_weather=true&timezone=auto",
+  "ipLocationUrl": "https://ipapi.co/json/",
+  "cities": {
+    "New York": "40.7128,-74.0060",
+    "London": "51.5074,-0.1278",
+    "Tokyo": "35.6762,139.6503",
+    "Paris": "48.8566,2.3522",
+    "San Francisco": "37.7749,-122.4194",
+    "Tel Aviv": "32.0853,34.7818"
+  },
+  "timezoneToCity": {
+    "Asia/Jerusalem": "Tel Aviv",
+    "America/New_York": "New York",
+    "Europe/London": "London",
+    "Asia/Tokyo": "Tokyo",
+    "Europe/Paris": "Paris",
+    "America/Los_Angeles": "San Francisco"
+  },
+  "historyLimit": 10
+}
