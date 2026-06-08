@@ -28,9 +28,9 @@ A simple Docker Compose-based weather app with a Python backend, PostgreSQL pers
 2. Ensure `.env` contains the required environment variables.
 3. Build and start the app:
 
-```bash
-docker compose up --build
-```
+    ```bash
+    docker compose up --build
+    ```
 
 4. Open `http://127.0.0.1:8000` in your browser.
 
